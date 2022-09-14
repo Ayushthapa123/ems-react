@@ -1,0 +1,123 @@
+// .login {
+//     width:500px;
+//     height:300px;
+//     background-color: red;
+// }
+
+
+.form {
+
+    width:100%;
+    height:auto;
+    position: relative;
+
+    div {
+   width: 100%;
+   height: auto;
+   position: relative;
+
+   span {
+    position: relative;
+    top:-45px;
+   }
+   .hideshow {
+    width:30px;
+    height:30px;
+    position: relative;
+    float:right;
+    right:40px;
+    top:-30px;
+    span {
+        position: relative;
+        top:0;
+        cursor: pointer;
+    }
+   
+   }
+
+    input {
+        width:100%;
+        height:40px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 1px solid rgb(240, 178, 178);
+        padding-left: 20px;
+       
+
+        &:required + span::before{
+            content:'';
+            position: absolute;
+            right:18px;
+            top:42px;
+            display: inline-block;
+            font-size: 1.2rem;
+            color:black;
+
+           
+           
+        }
+            
+        
+    &:valid + span::before{
+        content:'\2705';
+        position: absolute;
+        right:18px;
+        top:42px;
+        display: inline-block;
+        font-size: 1.2rem;
+        color:black;
+
+       
+       
+    }
+
+
+    }
+}}
+
+
+.message {
+    width:100%;
+    min-height:100px;
+    background-color: rgb(255, 246, 246);
+    border-radius: 10px;
+    padding-left: 30px;
+    
+    p {
+        margin:5px;
+        font-size: 12px;
+        span {
+            position: relative;
+            top:5px;
+        }
+    }
+}
+
+
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }

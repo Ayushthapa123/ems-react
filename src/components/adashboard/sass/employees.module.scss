@@ -1,0 +1,21 @@
+.econtainer {
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+}
+
+
+@media (max-width:1000px) {
+    .econtainer {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    
+    }
+
+}
