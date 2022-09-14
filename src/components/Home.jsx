@@ -16,8 +16,12 @@ console.log('role from home',currentrole);
 
     return (
         <>
+        <div style={{textAlign:"center"}}>
             <h1>Home Page</h1>
+            <h3>Nothing Here</h3>
             <button onClick={handleClick}>Logout</button>
+            </div>
+
         </>
     )
 }
